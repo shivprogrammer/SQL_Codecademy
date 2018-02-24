@@ -50,4 +50,11 @@ WHERE id = 3;
 UPDATE friends
 SET email = 'blackmamba@baller.com'
 WHERE id = 4;
-SELECT * FROM friends; [worked!]
+-- SELECT * FROM friends; [worked!]
+
+
+-- Jane Doe is not a real person. Remove her from friends.
+DELETE FROM friends
+WHERE id = 1;
+
+SELECT * FROM friends;
